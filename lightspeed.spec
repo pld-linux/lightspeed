@@ -33,7 +33,7 @@ make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make install
+%{__make} install
 
 gzip -9nf AUTHORS CONTROLS COPYING ChangeLog MATH OVERVIEW README TODO
 
