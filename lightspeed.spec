@@ -27,12 +27,12 @@ completely interactive, rendering the exotic distortions in real-time!
 %setup -q
 
 %build
-LDFLAGS="-s"; export LDFLAGS
 %configure 
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install
 
 gzip -9nf AUTHORS CONTROLS COPYING ChangeLog MATH OVERVIEW README TODO
