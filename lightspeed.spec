@@ -52,7 +52,7 @@ renderuje egzotyczne zniekszta³cenia w czasie rzeczywistym!
 rm -f missing
 aclocal
 autoconf
-automake -a -c -f
+automake -a -c -f --foreign
 %configure
 %{__make}
 
