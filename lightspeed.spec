@@ -1,14 +1,16 @@
 Summary:	Light Speed! - an interactive relativistic simulator
 Name:		lightspeed
 Version:	1.2
-Release:	1
-Copyright:	MozPL
+Release:	2
+License:	MozPL
 Group:		X11/Applications/Games
 Group(de):	X11/Applikationen/Spiele
 Group(pl):	X11/Aplikacje/Gry
 Source0:	http://fox.mit.edu/skunk/soft/src/%{name}-%{version}.tar.gz
 URL:		http://fox.mit.edu/skunk/soft/lightspeed/
 BuildRequires:	gtk+-devel >= 1.0.1
+BuildRequires:	XFree86-OpenGL-devel
+BuildRequires:	gtkglarea-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define _prefix /usr/X11R6
@@ -31,13 +33,17 @@ in real-time!
 %setup -q
 
 %build
+rm -f missing
+aclocal
+autoconf
+automake -a -c
 %configure 
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 gzip -9nf AUTHORS CONTROLS COPYING ChangeLog MATH OVERVIEW README TODO
 
