@@ -3,16 +3,16 @@ Summary(pl):	Light SPeed! - interaktywny, relatywistyczny symulator
 Name:		lightspeed
 Version:	1.2
 Release:	2
-License:	MozPL
+License:	MPL 1.0
 Group:		X11/Applications/Games
-Source0:	http://fox.mit.edu/skunk/soft/src/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/lightspeed/%{name}-%{version}.tar.gz
 # Source0-md5:	68d7a4af3ad5432d28f171682fc6438e
-URL:		http://fox.mit.edu/skunk/soft/lightspeed/
-BuildRequires:	gtk+-devel >= 1.0.1
+URL:		http://lightspeed.sourceforge.net/
 BuildRequires:	OpenGL-devel
-BuildRequires:	gtkglarea-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	gtk+-devel >= 1.0.1
+BuildRequires:	gtkglarea-devel
 Requires:	OpenGL
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
