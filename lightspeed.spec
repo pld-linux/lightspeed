@@ -51,8 +51,8 @@ renderuje egzotyczne zniekszta³cenia w czasie rzeczywistym!
 %build
 rm -f missing
 aclocal
-autoconf
-automake -a -c -f --foreign
+%{__autoconf}
+%{__automake}
 %configure
 %{__make}
 
