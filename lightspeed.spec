@@ -50,7 +50,7 @@ renderuje egzotyczne zniekszta³cenia w czasie rzeczywistym!
 
 %build
 rm -f missing
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure
