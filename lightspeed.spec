@@ -6,7 +6,7 @@ Copyright:	MozPL
 Group:		X11/Amusements
 Source:		http://fox.mit.edu/skunk/soft/src/%{name}-%{version}.tar.gz
 URL:		http://fox.mit.edu/skunk/soft/lightspeed/
-BuildPrereq:	gtk+-devel >= 1.0.1
+BuildRequires:	gtk+-devel >= 1.0.1
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %define _prefix /usr/X11R6
