@@ -35,14 +35,14 @@ in real-time!
 %description -l pl
 Light Speed! jest opartym na OpenGL programem ilustruj±cym efekty
 relatywistyczne w zachowaniu ruchomych obiektów. Kiedy obiekt
-przyspiesza powy¿ej kliku milionów metrów na sekundê, te efekty
+przyspiesza powy¿ej kilku milionów metrów na sekundê, te efekty
 zaczynaj± byæ widoczne, tym bardziej, im bardziej prêdko¶æ zbli¿a siê
 do prêdko¶ci ¶wiat³a. Te efekty relatywistyczne s± zale¿ne od
-po³o¿enia obserwatora i zawieraj±: zmiany d³ugo¶ci, koloru, jasno¶ci i
-kszta³tu.
+po³o¿enia obserwatora i zawieraj±: zmiany d³ugo¶ci, koloru, jasno¶ci 
+i kszta³tu.
 
-Ruchomy obiekt jest bry³± geometryczn±. Mog± byæ importowane obiekty z
-3D Studio i LightWave 3D. Symulator jest w pe³ni interaktywny,
+Ruchomy obiekt jest bry³± geometryczn±. Mog± byæ importowane obiekty 
+z 3D Studio i LightWave 3D. Symulator jest w pe³ni interaktywny,
 renderuje egzotyczne zniekszta³cenia w czasie rzeczywistym!
 
 %prep
