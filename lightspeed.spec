@@ -1,4 +1,5 @@
 Summary:	Light Speed! - an interactive relativistic simulator
+Summary(pl):	Light SPeed! - interaktywny, relatywistyczny symulator
 Name:		lightspeed
 Version:	1.2
 Release:	2
@@ -9,11 +10,15 @@ Group(pl):	X11/Aplikacje/Gry
 Source0:	http://fox.mit.edu/skunk/soft/src/%{name}-%{version}.tar.gz
 URL:		http://fox.mit.edu/skunk/soft/lightspeed/
 BuildRequires:	gtk+-devel >= 1.0.1
-BuildRequires:	XFree86-OpenGL-devel
+BuildRequires:	OpenGL-devel
 BuildRequires:	gtkglarea-devel
+BuildRequires:	autoconf
+BuildRequires:	automake
+Requires:	OpenGL
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define _prefix /usr/X11R6
+%define 	_prefix 	/usr/X11R6
+%define		_noautoreqdep	libGL.so.1 libGLU.so.1
 
 %description
 Light Speed! is an OpenGL-based program which illustrates the effects
@@ -28,6 +33,19 @@ The moving object is, by default, a geometric lattice. 3D Studio and
 LightWave 3D objects may be imported as well. Best of all, the
 simulator is completely interactive, rendering the exotic distortions
 in real-time!
+
+%description -l pl
+Light Speed! jest opartym na OpenGL programem ilustruj±cym efekty
+relatywistyczne w zachowaniu ruchomych obiektów. Kiedy obiekt
+przyspiesza powy¿ej kliku milionów metrów na sekundê, te efekty
+zaczynaj± byæ widoczne, tym bardziej, im bardziej prêdko¶æ zbli¿a siê
+do prêdko¶ci ¶wiat³a. Te efekty relatywistyczne s± zale¿ne od
+po³o¿enia obserwatora i zawieraj±: zmiany d³ugo¶ci, koloru, jasno¶ci
+i kszta³tu.
+
+Ruchomy obiekt jest bry³± geometryczn±. Mog± byæ importowane obiekty
+z 3D Studio i LightWave 3D. Symulator jest w pe³ni interaktywny,
+renderuje egzotyczne zniekszta³cenia w czasie rzeczywistym!
 
 %prep
 %setup -q
