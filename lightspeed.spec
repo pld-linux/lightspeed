@@ -29,7 +29,7 @@ completely interactive, rendering the exotic distortions in real-time!
 %build
 LDFLAGS="-s"; export LDFLAGS
 %configure 
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
