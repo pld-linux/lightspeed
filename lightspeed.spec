@@ -5,8 +5,6 @@ Version:	1.2
 Release:	2
 License:	MozPL
 Group:		X11/Applications/Games
-Group(de):	X11/Applikationen/Spiele
-Group(pl):	X11/Aplikacje/Gry
 Source0:	http://fox.mit.edu/skunk/soft/src/%{name}-%{version}.tar.gz
 URL:		http://fox.mit.edu/skunk/soft/lightspeed/
 BuildRequires:	gtk+-devel >= 1.0.1
