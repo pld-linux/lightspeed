@@ -35,10 +35,12 @@ make
 rm -rf $RPM_BUILD_ROOT
 make install
 
+gzip -9nf AUTHORS CONTROLS COPYING ChangeLog MATH OVERVIEW README TODO
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS CONTROLS COPYING ChangeLog MATH OVERVIEW README TODO
+%doc {AUTHORS,CONTROLS,COPYING,ChangeLog,MATH,OVERVIEW,README,TODO}.gz
 %attr(755,root,root) %{_bindir}/*
