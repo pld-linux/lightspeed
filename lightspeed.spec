@@ -7,7 +7,7 @@ Group:		X11/Amusements
 Source:		http://fox.mit.edu/skunk/soft/src/%{name}-%{version}.tar.gz
 URL:		http://fox.mit.edu/skunk/soft/lightspeed/
 BuildRequires:	gtk+-devel >= 1.0.1
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define _prefix /usr/X11R6
 
