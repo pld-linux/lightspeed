@@ -1,18 +1,18 @@
 Summary:	Light Speed! - an interactive relativistic simulator
 Summary(pl):	Light SPeed! - interaktywny, relatywistyczny symulator
 Name:		lightspeed
-Version:	1.2
-Release:	2
+Version:	1.2a
+Release:	0.1
 License:	MPL 1.0
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/lightspeed/%{name}-%{version}.tar.gz
-# Source0-md5:	68d7a4af3ad5432d28f171682fc6438e
+# Source0-md5:	d6162f8b200db8ebfade791a71a439c0
 URL:		http://lightspeed.sourceforge.net/
 BuildRequires:	OpenGL-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gtk+-devel >= 1.0.1
-BuildRequires:	gtkglarea-devel
+BuildRequires:	gtkglarea1-devel
 Requires:	OpenGL
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -50,9 +50,9 @@ renderuje egzotyczne zniekszta³cenia w czasie rzeczywistym!
 
 %build
 rm -f missing
-%{__aclocal}
-%{__autoconf}
-%{__automake}
+#%%{__aclocal}
+#%%{__autoconf}
+#%%{__automake}
 %configure
 %{__make}
 
@@ -66,5 +66,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS CONTROLS COPYING ChangeLog MATH OVERVIEW README TODO
+%doc AUTHORS COPYING ChangeLog MATH README TODO
 %attr(755,root,root) %{_bindir}/*
