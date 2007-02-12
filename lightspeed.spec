@@ -1,5 +1,5 @@
 Summary:	Light Speed! - an interactive relativistic simulator
-Summary(pl):	Light SPeed! - interaktywny, relatywistyczny symulator
+Summary(pl.UTF-8):   Light SPeed! - interaktywny, relatywistyczny symulator
 Name:		lightspeed
 Version:	1.2a
 Release:	0.1
@@ -32,18 +32,18 @@ LightWave 3D objects may be imported as well. Best of all, the
 simulator is completely interactive, rendering the exotic distortions
 in real-time!
 
-%description -l pl
-Light Speed! jest opartym na OpenGL programem ilustruj±cym efekty
-relatywistyczne w zachowaniu ruchomych obiektów. Kiedy obiekt
-przyspiesza powy¿ej kilku milionów metrów na sekundê, te efekty
-zaczynaj± byæ widoczne, tym bardziej, im bardziej prêdko¶æ zbli¿a siê
-do prêdko¶ci ¶wiat³a. Te efekty relatywistyczne s± zale¿ne od
-po³o¿enia obserwatora i zawieraj±: zmiany d³ugo¶ci, koloru, jasno¶ci 
-i kszta³tu.
+%description -l pl.UTF-8
+Light Speed! jest opartym na OpenGL programem ilustrujÄ…cym efekty
+relatywistyczne w zachowaniu ruchomych obiektÃ³w. Kiedy obiekt
+przyspiesza powyÅ¼ej kilku milionÃ³w metrÃ³w na sekundÄ™, te efekty
+zaczynajÄ… byÄ‡ widoczne, tym bardziej, im bardziej prÄ™dkoÅ›Ä‡ zbliÅ¼a siÄ™
+do prÄ™dkoÅ›ci Å›wiatÅ‚a. Te efekty relatywistyczne sÄ… zaleÅ¼ne od
+poÅ‚oÅ¼enia obserwatora i zawierajÄ…: zmiany dÅ‚ugoÅ›ci, koloru, jasnoÅ›ci 
+i ksztaÅ‚tu.
 
-Ruchomy obiekt jest bry³± geometryczn±. Mog± byæ importowane obiekty 
-z 3D Studio i LightWave 3D. Symulator jest w pe³ni interaktywny,
-renderuje egzotyczne zniekszta³cenia w czasie rzeczywistym!
+Ruchomy obiekt jest bryÅ‚Ä… geometrycznÄ…. MogÄ… byÄ‡ importowane obiekty 
+z 3D Studio i LightWave 3D. Symulator jest w peÅ‚ni interaktywny,
+renderuje egzotyczne znieksztaÅ‚cenia w czasie rzeczywistym!
 
 %prep
 %setup -q
