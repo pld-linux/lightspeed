@@ -1,5 +1,5 @@
 Summary:	Light Speed! - an interactive relativistic simulator
-Summary(pl.UTF-8):   Light SPeed! - interaktywny, relatywistyczny symulator
+Summary(pl.UTF-8):	Light SPeed! - interaktywny, relatywistyczny symulator
 Name:		lightspeed
 Version:	1.2a
 Release:	0.1
